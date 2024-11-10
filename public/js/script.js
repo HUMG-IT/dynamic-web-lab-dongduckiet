@@ -1,3 +1,4 @@
+
 // Form lưu tên
 document.getElementById('nameForm').addEventListener('submit', async function (e) {
     // Ngăn hành vi mặc định của form (ngăn tải lại trang)
@@ -44,5 +45,5 @@ document.getElementById('bmiForm').addEventListener('submit', async function (e)
     const data = await response.json();
 
     // Hiển thị thông điệp trả về từ server trong phần tử có id là 'bmiResult'
-    document.getElementById('bmiResult').textContent = `BMI của bạn là: ${data.bmi}, Phân loại: ${data.classification}`;
+    document.getElementById('bmiResult').textContent = `BMI của bạn là: ${data.bmi}, Phân loại: ${data.category}`;
 });
